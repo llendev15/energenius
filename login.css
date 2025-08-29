@@ -1,0 +1,156 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f4f8;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Form Section */
+.form-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   background: linear-gradient(to bottom right, #ebf8ff, #e0f2fe);
+    padding: 20px;
+}
+
+.form-container {
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    background: #2563eb;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+
+.app-name {
+    font-size: 35px;
+    font-weight: bold;
+    color: #333333;
+}
+
+.form-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    color: #666666;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.submit-button:hover {
+    background: #1e4db7;
+}
+
+.toggle-container {
+    margin-top: 15px;
+}
+
+.toggle-button {
+    background: none;
+    border: none;
+    color: #2563eb;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold
+}
+.marketing-section {
+    flex: 1;
+    background: #2563eb;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.marketing-container {
+    max-width: 500px;
+    text-align: center;
+}
+.marketing-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.marketing-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.feature {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.feature h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.feature p {
+    font-size: 14px;
+}
+/* Hidden Class */
+.hidden {
+    display: none;
+}

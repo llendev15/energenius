@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energenius Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Login/Sign-up Form Section -->
+        <div class="form-section">
+            <div class="form-container">
+                <!-- App Logo and Name -->
+                <div class="logo-container">
+                    <div class="logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+                            <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.8 1.3 1.5 1.5 2.5"></path>
+                            <path d="M9 18h6"></path>
+                            <path d="M10 22h4"></path>
+                        </svg>
+                    </div>
+                    <h1 class="app-name">Energenius</h1>
+                </div>
+
+                <!-- Sign In Form -->
+                <div id="sign-in-form" class="form-content">
+                    <h2 class="form-title">Welcome back</h2>
+                    <p class="form-subtitle">Monitor and manage your energy consumption in real-time</p>
+                    <form action="login.php" method="POST">
+                        <div class="form-group">
+                            <label for="email-input">Email address</label>
+                            <input type="email" id="email-input" name="email" placeholder="you@example.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="password-input">Password</label>
+                            <input type="password" id="password-input" name="password" placeholder="••••••••" required />
+                        </div>
+                        <button type="submit" class="submit-button">Sign in</button>
+                    </form>
+                    <div class="toggle-container">
+                        <button id="show-sign-up" class="toggle-button">Need an account? Sign up</button>
+                    </div>
+                </div>
+
+                <!-- Sign Up Form -->
+                <div id="sign-up-form" class="form-content hidden">
+                    <h2 class="form-title">Create your account</h2>
+                    <p class="form-subtitle">Start managing your energy usage and saving money today</p>
+                    <form action="signup.php" method="POST">
+                        <div class="form-group">
+                            <label for="name-input">Name</label>
+                            <input type="text" id="name-input" name="name" placeholder="Your full name" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="email-input-signup">Email address</label>
+                            <input type="email" id="email-input-signup" name="email" placeholder="you@example.com" required />
+                        </div>
+                        <div class="form-group">
+                            <label for="password-input-signup">Password</label>
+                            <input type="password" id="password-input-signup" name="password" placeholder="••••••••" required />
+                        </div>
+                        <button type="submit" class="submit-button">Sign up</button>
+                    </form>
+                    <div class="toggle-container">
+                        <button id="show-sign-in" class="toggle-button">Already have an account? Sign in</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Marketing Section -->
+        <div class="marketing-section">
+            <div class="marketing-container">
+                <h2 class="marketing-title">IoT-based Real-Time Energy Management</h2>
+                <p class="marketing-description">
+                    Monitor and control your devices, track your energy consumption, and save money with our smart energy management system.
+                </p>
+                <div class="features-grid">
+                    <div class="feature">
+                        <h3>Real-time Monitoring</h3>
+                        <p>Track your energy usage in real-time and get insights on consumption patterns.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Remote Control</h3>
+                        <p>Control your appliances remotely and schedule their operation times.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Budget Tracking</h3>
+                        <p>Set monthly budgets and receive alerts when approaching your limits.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Smart Notifications</h3>
+                        <p>Get notified about unusual consumption patterns and potential savings.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
